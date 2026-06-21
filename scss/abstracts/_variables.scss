@@ -1,23 +1,21 @@
-@use './functions' as *;
-
 :root {
-    --font-heading: 'Crimson Text', 'Crimson Text Fallback', serif;
-    --font-body: 'DM Sans', 'DM Sans Fallback', sans-serif;
-    --font-link: 'DM Sans', 'DM Sans Fallback', sans-serif;
-    --font-caption: 'Roboto Mono', 'Roboto Mono Fallback', monospace;
-    --font-table-heading-1: 'Rethink sans', 'Rethink sans Fallback', sans-serif;
-    --font-table-heading-2: 'Reddit Mono', 'Reddit Mono Fallback', monospace;
+    --font-heading: 'Crimson Text', serif;
+    --font-body: 'DM Sans', sans-serif;
+    --font-link: 'DM Sans', sans-serif;
+    --font-caption: 'Roboto Mono', monospace;
+    --font-table-heading-1: 'Rethink sans', sans-serif;
+    --font-table-heading-2: 'Reddit Mono', monospace;
 
     --font-weight-regular: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 700;
 
-    --font-size-h1: #{rem(50)};
-    --font-size-h2: #{rem(40)};
-    --font-size-h3: #{rem(18)};
-    --font-size-body: #{rem(15)};
-    --font-size-link: #{rem(14)};
-    --font-size-caption: #{rem(10.5)};
+    --font-size-h1: 50px;
+    --font-size-h2: 40px;
+    --font-size-h3: 18px;
+    --font-size-body: 15px;
+    --font-size-link: 14px;
+    --font-size-caption: 10.5px;
 
     --line-height-h1: 0.95;
     --line-height-h2: 1.1;
@@ -26,12 +24,12 @@
     --line-height-link: 1.4;
     --line-height-caption: 1.4;
 
-    --letter-spacing-h1: #{ls(-3)};
-    --letter-spacing-h2: #{ls(-4)};
-    --letter-spacing-h3: #{ls(-3)};
-    --letter-spacing-body: #{ls(-0.5)};
-    --letter-spacing-link: #{ls(-2.5)};
-    --letter-spacing-caption: #{ls(-1)};
+    --letter-spacing-h1: -3%;
+    --letter-spacing-h2: -4%;
+    --letter-spacing-h3: -3%;
+    --letter-spacing-body: -0.5%;
+    --letter-spacing-link: -2.5%;
+    --letter-spacing-caption: -1%;
 
     --accent-color-1: #485C11;
     --accent-color-2: #DFECC6;
@@ -43,20 +41,20 @@
     --text-color:#6F6F6F;
     --number-color:#6F6F6F;
 
-    --space-8:  #{rem(8)};
-    --space-10:  #{rem(10)};
-    --space-14:  #{rem(14)};
-    --space-16:  #{rem(16)};
-    --space-20:  #{rem(20)};
-    --space-22:  #{rem(22)};
-    --space-30:  #{rem(30)};
-    --space-32:  #{rem(32)};
-    --space-40:  #{rem(40)};
-    --space-60:  #{rem(60)};
-    --space-80:  #{rem(80)};
-    --space-100:  #{rem(100)};
-    --space-120:  #{rem(120)};
-    --space-140:  #{rem(140)};
+    --space-8: 8px;
+    --space-10: 10px;
+    --space-14: 14px;
+    --space-16: 16px;
+    --space-20: 20px;
+    --space-22: 22px;
+    --space-30: 30px;
+    --space-32: 32px;
+    --space-40: 40px;
+    --space-60: 60px;
+    --space-80: 80px;
+    --space-100: 100px;
+    --space-120: 120px;
+    --space-140: 140px;
 
     --border-radius-pill: 1000px;
     --border-radius-table: 20px;
@@ -67,13 +65,13 @@
 
 @media (min-width: 800px) {
   :root {
-    --font-size-h1: #{rem(54)};
+    --font-size-h1: 54px;
     --line-height-h1: 0.90;
   }
 }
 
 @media (min-width: 1200px) {
   :root {
-    --font-size-h1: #{rem(60)};
+    --font-size-h1: 60px;
   }
 }

@@ -7,17 +7,6 @@
   src: url('../fonts/Crimson-Text/crimson-text-v19-latin-regular.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'Crimson Text Fallback';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Times New Roman');
-  ascent-override: 98.32%;
-  descent-override: 36.31%;
-  line-gap-override: 0.00%;
-  size-adjust: 96.55%;
-}
-
 /* ---- DM Sans ---- */
 
 @font-face {
@@ -29,17 +18,6 @@
 }
 
 @font-face {
-  font-family: 'DM Sans Fallback';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Arial');
-  ascent-override: 94.36%;
-  descent-override: 29.49%;
-  line-gap-override: 0.00%;
-  size-adjust: 105.13%;
-}
-
-@font-face {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
@@ -48,33 +26,11 @@
 }
 
 @font-face {
-  font-family: 'DM Sans Fallback';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Arial');
-  ascent-override: 92.63%;
-  descent-override: 28.95%;
-  line-gap-override: 0.00%;
-  size-adjust: 107.09%;
-}
-
-@font-face {
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
   src: url('../fonts/DM-Sans/dm-sans-v17-latin-700.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'DM Sans Fallback';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Arial Bold');
-  ascent-override: 96.31%;
-  descent-override: 30.10%;
-  line-gap-override: 0.00%;
-  size-adjust: 103.00%;
 }
 
 /* ---- Roboto Mono ---- */
@@ -86,17 +42,6 @@
   src: url('../fonts/Roboto-Mono/roboto-mono-v31-latin-regular.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'Roboto Mono Fallback';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Courier New');
-  ascent-override: 104.79%;
-  descent-override: 27.10%;
-  line-gap-override: 0.00%;
-  size-adjust: 100.00%;
-}
-
 /* ---- Rethink sans ---- */
 @font-face {
   font-family: 'Rethink sans';
@@ -106,17 +51,6 @@
   src: url('../fonts/Rethink-sans/rethink-sans-v7-latin-500.woff2') format('woff2');
 }
 
-@font-face {
-  font-family: 'Rethink sans Fallback';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Arial');
-  ascent-override: 96.22%;
-  descent-override: 30.07%;
-  line-gap-override: 0.00%;
-  size-adjust: 103.10%;
-}
-
 /* ---- Reddit Mono ---- */
 @font-face {
   font-family: 'Reddit Mono';
@@ -124,15 +58,4 @@
   font-weight: 500;
   font-display: swap;
   src: url('../fonts/Reddit-Mono/reddit-mono-v5-latin-500.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Reddit Mono Fallback';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Courier New');
-  ascent-override: 107.73%;
-  descent-override: 30.84%;
-  line-gap-override: 0.00%;
-  size-adjust: 93.73%;
 }
