@@ -3,9 +3,10 @@
 .specs {
 
     &__inner {
-        
-        padding-bottom: var(--space-20);
-        
+        display: flex;
+        padding-bottom: var(--space-120);
+        flex-direction: column;
+        min-width: 0;
     }
 
     &__content {
@@ -19,6 +20,7 @@
         align-items: center;
         text-align: center;
         gap: var(--space-40);
+        min-width: 0;
     }
 
     &__content-inner {
@@ -45,10 +47,124 @@
     }
 
     &__table {
-
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+        
         th, td {
-            min-width: 200px;;
+            min-width: 200px;
         }
-       
+
+        th {
+            padding-top: var(--space-40);
+            padding-right: var(--space-30);
+            padding-bottom: var(--space-40);
+            padding-left: var(--space-30);
+            border-bottom: 1px solid var(--accent-color-6);
+        }  
+        
+        td {
+            position: relative;
+            padding-top: var(--space-32);
+            padding-right: var(--space-20);
+            padding-bottom: var(--space-32);
+            padding-left: var(--space-20);
+            border-bottom: 0.5px solid var(--divider-color);
+        }
+
+        thead th:first-child, td:first-child {
+            border-left: 1px solid var(--divider-color);
+            border-right: 1px solid var(--divider-color);
+            box-shadow: 0 0 8px 0 var(--divider-color);
+            background: var(--bg-color);
+        }
+
+        thead th:first-child {
+            border-top: 1px solid var(--divider-color);
+            border-top-left-radius: var(--border-radius-table);
+            border-top-right-radius: var(--border-radius-table);
+            font-family: var(--font-body);
+            font-weight: var(--font-weight-medium);
+            font-size: #{rem(25.71)};
+            line-height: 1.2;
+            letter-spacing: #{ls(-8)};
+            color: var(--accent-color-4);
+        }
+
+        thead th:nth-child(2) {
+            font-family: var(--font-table-heading-1);
+            font-weight: var(--font-weight-medium);
+            font-size: #{rem(22.86)};
+            line-height: 1.2;
+            letter-spacing: #{ls(-8)};
+            color: var(--text-color);
+        }
+
+        thead th:nth-child(3) {
+            font-family: var(--font-table-heading-2);
+            font-weight: var(--font-weight-medium);
+            font-size: #{rem(21.86)};
+            line-height: 1.2;
+            letter-spacing: #{ls(-8)};
+            color: var(--text-color);
+        }
+  
+        tbody tr:last-child td:first-child {
+            border-bottom: 1px solid var(--divider-color);
+            border-bottom-left-radius: var(--border-radius-table);
+            border-bottom-right-radius: var(--border-radius-table);
+        }
+
+        tbody td svg, tbody td p {
+            display: inline;
+        }
+
+        tbody td p {
+            font-family: var(--font-caption);
+            font-weight: var(--font-weight-regular);
+            font-size: var(--font-size-caption);
+            line-height: var(--line-height-caption);
+            letter-spacing: #{ls(-3)};
+            white-space: nowrap;
+            color: var(--accent-color-4);
+        }
+
+        tbody td svg path {
+            fill: var(--accent-color-1);
+        }
+    }
+
+    &__cell {
+        display: flex;              /* το flex ΕΔΩ, στο wrapper */
+        align-items: flex-start;
+        gap: var(--space-8);
+    }
+}
+
+@media (min-width: 800px) {
+
+    .specs {
+        &__table thead th:nth-child(2) {
+            font-size: #{rem(22.86)};
+        }
+
+        &__table thead th:nth-child(3) {
+            font-size: #{rem(21.65)};
+        }
+
+        &__table tbody td p {
+            font-size: #{rem(11)};
+            letter-spacing: #{ls(-1)};
+        }
+    }
+
+}
+
+@media (min-width: 1280px) {
+
+    .specs {
+        &__table tbody td p {
+            font-size: #{rem(12)};
+        }
     }
 }
