@@ -150,6 +150,11 @@
             }
         }
 
+        &__content {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         &__table thead th:nth-child(2) {
             font-size: 22.86px;
         }
@@ -180,4 +185,4 @@
             font-size: 12px;
         }
     }
-}
+} 

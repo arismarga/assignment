@@ -50,7 +50,7 @@
         position: relative;
 
         img {
-            border-radius: 10px;
+            border-radius: 30px;
         }
 
         &--nav {        
@@ -87,6 +87,8 @@
 @media (min-width: 800px) {
     .features {
         &__inner{
+            padding-left: 0;
+            padding-right: 0;
             padding-bottom: var(--space-120);
         }
 
