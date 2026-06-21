@@ -18,7 +18,7 @@
         padding-left: var(--space-16);
         align-items: center;
         text-align: center;
-        gap: var(--space-16);
+        gap: var(--space-40);
     }
 
     &__content-inner {
@@ -45,8 +45,10 @@
     }
 
     &__table {
-        min-width: 600px;
 
+        th, td {
+            min-width: 200px;;
+        }
        
     }
 }
