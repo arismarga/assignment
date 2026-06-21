@@ -1,0 +1,19 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-14) var(--space-22);
+    border-radius: var(--border-radius-pill);
+    gap: var(--space-10);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    &--primary {
+        color: var(--accent-color-4);
+        background-color: var(--accent-color-2);
+    }
+
+    &:hover {
+        color: var(--bg-color);
+        background-color: var(--accent-color-1 );
+    }
+}

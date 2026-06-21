@@ -1,0 +1,76 @@
+@use './functions' as *;
+
+:root {
+    --font-heading: 'Crimson Text', 'Crimson Text Fallback', serif;
+    --font-body: 'DM Sans', 'DM Sans Fallback', sans-serif;
+    --font-link: 'DM Sans', 'DM Sans Fallback', sans-serif;
+    --font-caption: 'Roboto Mono', 'Roboto Mono Fallback', monospace;
+    --font-table-heading-1: 'Rethink sans', 'Rethink sans Fallback', sans-serif;
+    --font-table-heading-2: 'Reddit Mono', 'Reddit Mono Fallback', monospace;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    --font-size-h1: #{rem(50)};
+    --font-size-h2: #{rem(40)};
+    --font-size-h3: #{rem(18)};
+    --font-size-body: #{rem(15)};
+    --font-size-link: #{rem(14)};
+    --font-size-caption: #{rem(10.5)};
+
+    --line-height-h1: 0.95;
+    --line-height-h2: 1.1;
+    --line-height-h3: 1;
+    --line-height-body: 1.4;
+    --line-height-link: 1.4;
+    --line-height-caption: 1.4;
+
+    --letter-spacing-h1: #{ls(-3)};
+    --letter-spacing-h2: #{ls(-4)};
+    --letter-spacing-h3: #{ls(-3)};
+    --letter-spacing-body: #{ls(-0.5)};
+    --letter-spacing-link: #{ls(-2.5)};
+    --letter-spacing-caption: #{ls(-1)};
+
+    --accent-color-1: #485C11;
+    --accent-color-2: #DFECC6;
+    --accent-color-3: #8E9C78;
+    --accent-color-4: #000000;
+    --accent-color-6: #CECECE;
+    --divider-color: #E9E9E9;
+    --bg-color:#ffffff;
+    --text-color:#6F6F6F;
+
+    --space-8:  #{rem(8)};
+    --space-10:  #{rem(10)};
+    --space-14:  #{rem(14)};
+    --space-16:  #{rem(16)};
+    --space-20:  #{rem(20)};
+    --space-22:  #{rem(22)};
+    --space-30:  #{rem(30)};
+    --space-40:  #{rem(40)};
+    --space-60:  #{rem(60)};
+    --space-80:  #{rem(80)};
+    --space-100:  #{rem(100)};
+    --space-120:  #{rem(120)};
+    --space-140:  #{rem(140)};
+
+    --border-radius-pill: 1000px;
+
+    --container-width: 100%;
+    --container-max-width: 1500px;
+}
+
+@media (min-width: 800px) {
+  :root {
+    --font-size-h1: #{rem(54)};
+    --line-height-h1: 0.90;
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --font-size-h1: #{rem(60)};
+  }
+}

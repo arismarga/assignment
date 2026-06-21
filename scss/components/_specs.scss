@@ -1,0 +1,52 @@
+@use "../abstracts/functions" as *;
+
+.specs {
+
+    &__inner {
+        
+        padding-bottom: var(--space-20);
+        
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        border-top: 1px solid var(--accent-color-6);
+        padding-top: var(--space-80);
+        padding-right: var(--space-16);
+        padding-bottom: var(--space-80);
+        padding-left: var(--space-16);
+        align-items: center;
+        text-align: center;
+        gap: var(--space-16);
+    }
+
+    &__content-inner {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-30);
+
+        .caption {
+            font-family: var(--font-caption);
+            font-weight: var(--font-weight-regular);
+            font-size: #{rem(10.5)};
+            line-height: var(--line-height-caption);
+            letter-spacing: #{ls(-3)};
+        }
+
+        .button {
+            align-self: center;
+        }
+    }
+
+    &__table-wrapper {
+        overflow-x: auto;
+        padding-left: var(--space-8);
+    }
+
+    &__table {
+        min-width: 600px;
+
+       
+    }
+}

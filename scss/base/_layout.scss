@@ -1,0 +1,34 @@
+.main-wrapper {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.container {
+    width: var(--container-width);
+    max-width: var(--container-max-width);
+    margin:0 auto;
+}
+
+.empty-space {
+    padding-top: var(--space-20);
+    padding-bottom: var(--space-20);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (min-width: 800px) {
+    .main-wrapper {
+        padding-right: var(--space-40);
+        padding-left: var(--space-40);
+    }
+}
