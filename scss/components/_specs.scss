@@ -144,6 +144,14 @@
 @media (min-width: 800px) {
 
     .specs {
+
+        &__content-inner {
+            .caption {
+                font-size: #{rem(11)};
+                letter-spacing: #{ls(-1)};
+            }
+        }
+
         &__table thead th:nth-child(2) {
             font-size: #{rem(22.86)};
         }
@@ -162,7 +170,14 @@
 
 @media (min-width: 1280px) {
 
-    .specs {
+    .specs { 
+        &__content-inner {
+            .caption {
+                font-size: #{rem(12)};
+                letter-spacing: #{ls(-1)}; 
+            }
+        }
+
         &__table tbody td p {
             font-size: #{rem(12)};
         }
